@@ -1,1 +1,35 @@
 .DS_Store
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Variable files (sensitive data)
+*.tfvars
+*.tfvars.json
+
+# Override files (local changes)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform lock file
+.terraform.lock.hcl
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore any temporary or generated files
+*.log
+*.log.*
+*.tfstate.backup
+terraform.tfstate.backup   

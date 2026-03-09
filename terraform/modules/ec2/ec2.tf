@@ -1,7 +1,8 @@
 resource "aws_instance" "web" {
+  depends_on = [data.aws_subnets.public]
   ami           = var.aws_ami
   instance_type = "t3.micro"
-  key_name      = "udacity"
+  key_name      = "my-great-key-pair"
   subnet_id     = data.aws_subnets.public.ids[0]
 
   vpc_security_group_ids = [

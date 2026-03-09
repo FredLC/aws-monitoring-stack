@@ -1,4 +1,4 @@
-resource "kubernetes_namespace" "udacity" {
+resource "kubernetes_namespace_v1" "udacity" {
    metadata {
      name = local.name
    }

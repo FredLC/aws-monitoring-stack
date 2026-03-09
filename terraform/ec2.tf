@@ -11,7 +11,8 @@
    source             = "./modules/ec2"
    name               = local.name
    account            = data.aws_caller_identity.current.account_id
-   aws_ami            = "ami-01040813c3969933e"
+  #  aws_ami            = "ami-0e9a45564c75e7e8e"
+   aws_ami            = "ami-03430e84881332f99"
    private_subnet_ids = module.vpc.private_subnet_ids
    vpc_id             = module.vpc.vpc_id
  }
